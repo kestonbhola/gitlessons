@@ -14,10 +14,39 @@
         }
     </style>
 </head>
-<section>
-    <h2> About me </h2>
-    <p> My name is Edwina Niles, and this is the second exercise for Git</p>
-</section>
+<!-- Accordion Section About Me -->
+<div class="accordion-section">
+  <h2>About Me</h2>
+  <div class="accordion">
+    <button class="accordion-button">Education</button>
+    <div class="accordion-content">
+      <p>I am Edwina Niles, currently studying Advanced Application Design at COMP314. I enjoy learning about software development and collaborative projects.</p>
+    </div>
+
+    <button class="accordion-button">Hobbies</button>
+    <div class="accordion-content">
+      <p>I enjoy coding, exploring new technologies, and contributing to open-source projects. I also like creative writing and design.</p>
+    </div>
+
+    <button class="accordion-button">Goals</button>
+    <div class="accordion-content">
+      <p>My goal is to develop robust software solutions, collaborate effectively in teams, and continue learning modern software architectures.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Accordion Script -->
+<script>
+  const accButtons = document.querySelectorAll(".accordion-button");
+  accButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const content = button.nextElementSibling;
+      content.style.display = (content.style.display === "block") ? "none" : "block";
+      button.classList.toggle("active");
+    });
+  });
+</script>
+
 <body>
     <img src="grenada.jpeg" alt="Beautiful view of Grenada" class="header-image">
 
