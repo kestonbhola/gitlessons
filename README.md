@@ -1,2 +1,2 @@
 # Class Project
-This repository is used for teaching students how to use Git and GitHub.
+This repository is used for teaching students how to use Git and GitHub. Also Jenkins
